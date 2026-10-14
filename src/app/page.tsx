@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-background text-foreground">
@@ -50,12 +52,12 @@ export default function Home() {
               ainda falta.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <button
-                type="button"
-                className="rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-primary-dark"
+              <Link
+                  href="/criar-casulo"
+                  className="rounded-full bg-primary px-6 py-3.5 text-center text-sm font-semibold text-white transition hover:bg-primary-dark"
               >
                 Criar meu Casulo
-              </button>
+              </Link>
               <a
                 href="#como-funciona"
                 className="rounded-full border border-border bg-surface px-6 py-3.5 text-center text-sm font-semibold transition hover:border-primary/30"
